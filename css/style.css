@@ -384,6 +384,7 @@ header nav ul li a:hover {
   display: flex;
   padding: 0;
   width: 100%;
+  height: 439px;
   flex-direction: column;
 }
 
@@ -397,7 +398,7 @@ header nav ul li a:hover {
   display: flex;
   margin: 0;
   align-items: flex-start;
-  padding: 20px 19px 20px 19px;
+  padding: 15px 0px 0px 19px;
 }
 
 /****** Footer ***********/
@@ -439,6 +440,29 @@ footer li {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
+
+
+
+@media (max-width: 1194px) {
+
+  .media3-padding {
+    padding: 5px 0px 0px 19px;
+  }
+
+
+}
+
+@media (max-width: 1110px) {
+
+  .media4-padding {
+    padding: 5px 0px 0px 19px;
+  }
+
+
+}
+
+
 @media (max-width: 1024px) {
 
   .filters {
@@ -520,8 +544,27 @@ footer li {
 @media (max-width: 854px) {
 
   .media3-padding {
-    padding: 8px 19px;
+    padding: 5px 19px;
   }
+
+
+}
+
+@media (max-width: 809px) {
+
+  .media4-padding {
+    padding: 5px 19px;
+  }
+
+
+}
+
+@media  (max-width: 777px) {
+
+  .media3-padding {
+    padding: 3px 19px;
+    font-size: 15.6px;
+}
 
 
 }
