@@ -219,6 +219,7 @@ header ul {
 /************************************
 *        SECTIONS HEB + POP         *
 ************************************/
+
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
@@ -264,7 +265,10 @@ header ul {
   color: var(--main-bg-color);
 }
 
-/****** Hebergements ***********/
+/************************************
+*        HEBERGEMENTS               *
+************************************/
+
 .hebergements {
   width: 65%;
 }
@@ -277,10 +281,8 @@ header ul {
 
 .hebergements-cards .card {
   display: flex;
-
   flex-direction: column;
   width: calc(33% - 30px);
-
   margin-top: 30px;
 }
 
@@ -314,7 +316,10 @@ header ul {
   font-size: 18px;
 }
 
-/****** Populaires ***********/
+/************************************
+*          POPULAIRES               *
+************************************/
+
 .populaires {
   width: 32%;
 }
@@ -364,7 +369,9 @@ header ul {
   margin-bottom: 5px;
 }
 
-/****** Activités ***********/
+/************************************
+*          ACTIVITÉS                *
+************************************/
 
 .activities {
   display: flex;
@@ -402,7 +409,9 @@ header ul {
   padding: 15px 0px 0px 19px;
 }
 
-/****** Footer ***********/
+/************************************
+*              FOOTER               *
+************************************/
 
 footer {
   display: flex;
@@ -435,10 +444,9 @@ footer li {
   gap: 15px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/************************************
+*          MEDIA QUERIES            *
+************************************/
 
 @media (max-width: 1194px) {
   .media3-padding {
@@ -539,8 +547,16 @@ footer li {
   }
 }
 
-/* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  
+/************************************
+*             HEADER                *
+************************************/
+
+  .main-container {
+    padding: 0;
+  }
+
   header {
     flex-direction: column;
     height: 115px;
@@ -557,7 +573,6 @@ footer li {
 
   header li {
     width: 50%;
-
     margin: 0px;
     border-top: none;
   }
@@ -575,9 +590,9 @@ footer li {
     border-color: var(--main-color);
   }
 
-  .main-container {
-    padding: 0;
-  }
+/************************************
+*              SEARCH               *
+************************************/
 
   .search {
     padding: 0 20px;
@@ -605,6 +620,10 @@ footer li {
     display: block;
   }
 
+/************************************
+*              FILTERS              *
+************************************/
+
   .filters {
     height: 100%;
     padding: 0 20px;
@@ -623,17 +642,20 @@ footer li {
     margin-bottom: 0;
   }
 
+/************************************
+*             HEB + POP             *
+************************************/
+
+  .hebergements-and-populaires {
+    margin-top: 0;
+    flex-direction: column;
+  }
   .hebergements {
     order: 2;
   }
 
   .populaires {
     order: 1;
-  }
-
-  .hebergements-and-populaires {
-    margin-top: 0;
-    flex-direction: column;
   }
 
   .hebergements-and-populaires .populaires {
@@ -644,11 +666,14 @@ footer li {
     background: none;
   }
 
+/************************************
+*            POPULAIRE              *
+************************************/
+
   .populaires {
     margin-top: 35px;
     display: flex;
     flex-direction: column;
-
     padding: 30px 20px;
   }
 
@@ -666,6 +691,10 @@ footer li {
   .populaires-cards img {
     height: 100%;
   }
+
+/************************************
+*           HEBERGEMENTS            *
+************************************/
 
   .hebergements-cards {
     flex-direction: column;
@@ -704,6 +733,10 @@ footer li {
     margin-top: 15px;
   }
 
+/************************************
+*            ACTIVITÉS              *
+************************************/
+
   .activities-cards {
     flex-direction: column;
     height: auto;
@@ -721,6 +754,10 @@ footer li {
   .activities-cards h3 {
     padding: 16px 19px;
   }
+
+/************************************
+*              FOOTER               *
+************************************/
 
   footer {
     flex-direction: column;
