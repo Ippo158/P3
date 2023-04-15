@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
+    <link rel="icon" type="image/png" href="images/logo/Booki.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,10 +33,10 @@
         <nav>
           <ul>
             <li>
-              <a href="#hebergements">Hébergements</a>
+              <a class="blue-link" href="#hebergements">Hébergements</a>
             </li>
             <li>
-              <a href="#activities">Activités</a>
+              <a class="blue-link" href="#activities">Activités</a>
             </li>
           </ul>
         </nav>
@@ -59,32 +60,30 @@
               type="text"
               placeholder="Marseille, France"
             />
-            <button class="button-search" type="submit"><span>Rechercher</span>
+            <button class="button-search" type="submit">
+              <span>Rechercher</span>
               <i class="fas fa-search"></i>
             </button>
-            
           </form>
         </section>
 
         <section class="filters">
           <div class="align-filters">
-          <h2 class="filters-title">Filtres</h2>
-          <div class="filters-options">
-            <button>
-              <i class="fa-sharp fa-solid fa-money-bill-wave"></i> Économique
-            </button>
-            <button><i class="fa-solid fa-person"></i>Familial</button>
-            <button><i class="fa-solid fa-heart"></i>Romantique</button>
-            <button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+            <h2 class="filters-title">Filtres</h2>
+            <div class="filters-options">
+              <button>
+                <i class="fa-sharp fa-solid fa-money-bill-wave"></i> Économique
+              </button>
+              <button><i class="fa-solid fa-person"></i>Familial</button>
+              <button><i class="fa-solid fa-heart"></i>Romantique</button>
+              <button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+            </div>
           </div>
-        </div>
           <p class="infobar">
-          <i class="fa-solid fa-info fa-xs"> </i>Plus de 500 logements sont
-          disponibles dans cette ville
-        </p>
+            <i class="fa-solid fa-info fa-xs"> </i>Plus de 500 logements sont
+            disponibles dans cette ville
+          </p>
         </section>
-
-       
 
         <div class="hebergements-and-populaires">
           <section class="hebergements" id="hebergements">
@@ -368,7 +367,9 @@
                   src="images/activites/paul-hermann.jpg"
                   alt="Image de l'activité Fort de Pomègues"
                 />
-                <h3 class="card-title activities-text media2-padding">Fort de Pomègues</h3>
+                <h3 class="card-title activities-text media2-padding">
+                  Fort de Pomègues
+                </h3>
               </a>
             </article>
             <article class="card">
@@ -377,7 +378,9 @@
                   src="images/activites/kilyan-sockalingum.jpg"
                   alt="Image de l'activité Parc national des Calanques"
                 />
-                <h3 class="card-title activities-text media-padding media3-padding">
+                <h3
+                  class="card-title activities-text media-padding media3-padding"
+                >
                   Parc national des Calanques
                 </h3>
               </a>
@@ -388,9 +391,10 @@
                   src="images/activites/florian-wehde.jpg"
                   alt="Image de l'activité Notre-Dame-de-la-Garde"
                 />
-                
-                
-                <h3 class="card-title activities-text media-padding media4-padding">
+
+                <h3
+                  class="card-title activities-text media-padding media4-padding"
+                >
                   Notre-Dame-de-la-Garde
                 </h3>
               </a>
@@ -402,27 +406,31 @@
         <div class="column-footer">
           <h3>À propos</h3>
           <ul>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales</li>
-            <li>Données et confidentialité</li>
+            <a href="#"
+              ><li>Fonctionnement du site</li>
+              <li>Conditions générales</li>
+              <li>Données et confidentialité</li></a
+            >
           </ul>
         </div>
         <div class="column-footer">
           <h3>Nos hébergements</h3>
           <ul>
-            <li>Charte qualité</li>
-            <li>Proposer votre hôtel</li>
+            <a href="#">
+              <li>Charte qualité</li>
+              <li>Proposer votre hôtel</li></a
+            >
           </ul>
         </div>
         <div class="column-footer">
           <h3>Assistance</h3>
           <ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
+            <a href="#">
+              <li>Centre d'aide</li>
+              <li>Nous contacter</li></a
+            >
           </ul>
         </div>
-
-        
       </footer>
     </div>
   </body>
