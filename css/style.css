@@ -793,7 +793,7 @@ footer li {
   }
 }
 
-@media (max-width: 373px) {
+@media (max-width: 359px) {
   .filters-options button {
     width: calc(100% - 10px);
     justify-content: center;
