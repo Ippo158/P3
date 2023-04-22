@@ -4,6 +4,7 @@
 
 * {
   font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -18,7 +19,6 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .main-container {
@@ -44,6 +44,7 @@ header {
 .logo-booki {
   height: 19px;
   padding-top: 30px;
+  box-sizing: content-box;
 }
 
 nav {
@@ -276,8 +277,8 @@ header ul {
 .hebergements-cards img {
   height: 124px;
   width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
+
 }
 
 .hebergements-cards .card-content {
@@ -331,8 +332,7 @@ header ul {
 .populaires-cards img {
   width: 33%;
   height: 134px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px 0 0 20px;
 }
 
 .populaires-cards .card-content {
@@ -368,7 +368,6 @@ header ul {
 .activities-cards {
   display: flex;
   margin-top: 30px;
-  height: 439px;
   gap: 30px;
 }
 
@@ -385,7 +384,7 @@ header ul {
 
 .activities-text {
   margin: 0;
-  padding: 15px 0px 0px 19px;
+  padding: 15px 0px 15px 19px;
 }
 
 /************************************
@@ -420,40 +419,13 @@ footer li {
   gap: 15px;
 }
 
-/************************************
-*          MEDIA QUERIES            *
-************************************/
+                      /************************************
+                      *          MEDIA QUERIES            *
+                      ************************************/
 
-@media screen and (max-width: 1270px) and (min-width: 1025px) {
-  .hebergements-cards .card {
-    width: calc(50% - 30px);
-  }
-
-  .populaires-cards {
-    height: 100%;
-  }
-
-  .populaires-cards img {
-    width: 40%;
-    height: 100%;
-  }
-
-  .populaires-cards .card {
-    height: calc(28.5% - 30px);
-  }
-}
-
-@media screen and (max-width: 1194px) {
-  .media3-padding {
-    padding: 5px 0px 0px 19px;
-  }
-}
-
-@media screen and (max-width: 1110px) {
-  .media4-padding {
-    padding: 5px 0px 0px 19px;
-  }
-}
+                            /**********************
+                            *       TABLETTE      *
+                            **********************/
 
 @media screen and (max-width: 1024px) {
   .align-filters {
@@ -491,8 +463,8 @@ footer li {
     width: 30%;
   }
 
-  .activities-cards {
-    height: 270px;
+  .populaires-cards img {
+    height: 100%;
   }
 
   .activities-cards img {
@@ -502,44 +474,13 @@ footer li {
   .activities-text {
     padding: 25.5px 19px;
   }
-
-  .media-padding {
-    padding: 16px 19px;
-  }
 }
 
-@media screen and (max-width: 961px) {
-  .media2-padding {
-    padding: 16px 19px;
-  }
-}
+                            /**********************
+                            *        MOBILE       *
+                            **********************/
 
-@media screen and (max-width: 860px) and (min-width: 768px) {
-  .hebergements-cards .card {
-    width: calc(50% - 30px);
-  }
-}
-
-@media screen and (max-width: 854px) {
-  .media3-padding {
-    padding: 5px 19px;
-  }
-}
-
-@media screen and (max-width: 809px) {
-  .media4-padding {
-    padding: 5px 19px;
-  }
-}
-
-@media screen and (max-width: 777px) {
-  .media3-padding {
-    padding: 3px 19px;
-    font-size: 15.6px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767px) {
 
 /************************************
 *             HEADER                *
@@ -640,14 +581,7 @@ footer li {
 
   .hebergements-and-populaires {
     margin-top: 0;
-    flex-direction: column;
-  }
-  .hebergements {
-    order: 2;
-  }
-
-  .populaires {
-    order: 1;
+    flex-direction: column-reverse;
   }
 
   .hebergements-and-populaires .populaires {
@@ -675,7 +609,7 @@ footer li {
   }
 
   .populaires-cards .card {
-    width: 98%;
+    width: 100%;
     height: 146px;
     margin-top: 15px;
   }
@@ -684,7 +618,7 @@ footer li {
     height: 100%;
   }
 
-/************************************
+ /************************************
 *           HEBERGEMENTS            *
 ************************************/
 
@@ -717,7 +651,7 @@ footer li {
   }
 
   .hebergements-cards .card {
-    width: 98%;
+    width: 100%;
     margin-top: 15px;
   }
 
@@ -757,11 +691,5 @@ footer li {
 
   .column-footer {
     padding: 30px 0 0 30px;
-  }
-}
-
-@media screen and (max-width: 359px) {
-  .filters-options button {
-    width: calc(100% - 10px);
   }
 }
