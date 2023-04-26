@@ -204,6 +204,7 @@ header ul {
   width: 24px;
   height: 24px;
   border-radius: 100%;
+  padding: 7px 10px;
 }
 
 /************************************
@@ -536,7 +537,7 @@ footer li {
   }
 
   .search-input {
-    width: 85%;
+    width: 86%;
   }
 
   .button-search {
@@ -567,7 +568,7 @@ footer li {
   }
 
   .filters-options button {
-    width: calc(50% - 10px);
+    width: calc(50% - 8px);
     justify-content: center;
   }
 
